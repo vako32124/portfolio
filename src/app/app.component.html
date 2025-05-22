@@ -13,6 +13,9 @@
       <a href="https://www.instagram.com/va._.k0/" target="_blank" rel="noopener">
         <img src="./instagram.png" alt="Instagram">
       </a>
+      <a href="https://www.linkedin.com/in/vako-vako-8924a5366/" target="_blank" rel="noopener">
+        <img src="./linkedin.png" alt="linkedin">
+      </a>
     </div>
   </section>
 
@@ -35,33 +38,17 @@
   <section class="projects">
     <h1>Projects</h1>
 
-    <div class="project">
-
-      <a href="https://vakochologauri-hotel-booking.netlify.app/">
-        <img src="" alt="">
-      </a>
-
-      <a href="">
-        <img src="" alt="">
-      </a>
-
-      <a href="">
-        <img src="" alt="">
-      </a>
-
-      <a href="">
-        <img src="" alt="">
-      </a>
-
-      <a href="">
-        <img src="" alt="">
-      </a>
-
-      <a href="">
-        <img src="" alt="">
-      </a>
-
+    <div class="projects-container">
+      <div class="project-card" *ngFor="let project of projectLinks">
+        <a [href]="project.url" target="_blank">
+          <h2>{{ project.title }}</h2>
+          <img [src]="project.img" [alt]="project.title">
+          <p>{{ project. description }}</p>
+        </a>
+      </div>
     </div>
+    
+    
     
   </section>
 
