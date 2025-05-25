@@ -13,7 +13,7 @@
       <a href="https://www.instagram.com/va._.k0/" target="_blank" rel="noopener">
         <img src="./instagram.png" alt="Instagram">
       </a>
-      <a href="https://www.linkedin.com/in/vako-vako-8924a5366/" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/in/vako-chologauri-8924a5366/" target="_blank" rel="noopener">
         <img src="./linkedin.png" alt="linkedin">
       </a>
     </div>
@@ -33,6 +33,22 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR64Px8VKcmd_pCymwD1SH5u_QxOexjlE-TpA&s" alt="GitLens" style="width:65px; height:65px;">
       <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
     </div>
+
+    <div class="skills-section">
+      <h2>My Skills</h2>
+    
+      <div class="skill" *ngFor="let skill of skills">
+        <div class="skill-header">
+          <span>{{ skill.name }}</span>
+          <span>{{ skill.percentage }}%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" [style.width.%]="skill.percentage"></div>
+        </div>
+      </div>
+    </div>
+    
+
   </section>
 
   <section class="projects">

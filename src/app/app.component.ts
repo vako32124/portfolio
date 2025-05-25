@@ -63,6 +63,20 @@ export class AppComponent {
        description: 'this is just a siple fast food app that i built when i didnt had much knowldege this is my first project built in html css and javascript'
     }
   ];
+
+
+
+
+  skills = [
+    { name: 'HTML', percentage: 95 },
+    { name: 'CSS', percentage: 90 },
+    { name: 'SCSS', percentage: 80 },
+    { name: 'JavaScript', percentage: 85 },
+    { name: 'TypeScript', percentage: 80 },
+    { name: 'Angular', percentage: 85 },
+    { name: 'Git/GitHub', percentage: 75 }
+  ];
+  
   
   
 
