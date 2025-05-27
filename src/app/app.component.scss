@@ -197,6 +197,31 @@ body {
   }
 }
 
+.custom-shape-divider-top-1748335172 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1748335172 svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 158px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1748335172 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .avatarimg {
     width: 130px;
